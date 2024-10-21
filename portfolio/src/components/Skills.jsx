@@ -74,10 +74,10 @@ function Skills() {
                 whileInView={"show"}
                 viewport={{once:false, amount:0.7}} 
                 className='flex justify-evenly'>  
-                  <img className='' src={cpp} alt="" srcset="" />
-                  <img className='' src={figma} alt="" srcset="" />
-                  <img className='' src={firebase} alt="" srcset="" />
-                  <img className='' src={git} alt="" srcset="" />
+                  <img src={cpp}/>
+                  <img src={figma}/>
+                  <img src={firebase}/>
+                  <img src={git}/>
                 </motion.div>
                 <motion.div
                 variants={fadeIn('up', 0.2)}
@@ -85,10 +85,10 @@ function Skills() {
                 whileInView={"show"}
                 viewport={{once:false, amount:0.7}} 
                 className='flex justify-evenly'>  
-                  <img className='' src={css3} alt="" srcset="" />
-                  <img className='' src={github} alt="" srcset="" />
-                  <img className='' src={cpp} alt="" srcset="" />
-                  <img className='' src={appwrite} alt="" srcset="" />
+                  <img src={css3}/>
+                  <img src={github}/>
+                  <img src={cpp}/>
+                  <img src={appwrite}/>
                 </motion.div>
             </div>
         </div>
