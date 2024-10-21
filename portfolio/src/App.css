@@ -1,0 +1,14 @@
+#icons img{
+    height: 50%;
+    width: 13%;
+    margin-top: 40px;
+}
+.component{
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    color:darkturquoise
+}
+.aboutdicetext{
+    margin-bottom: 10px;
+}
