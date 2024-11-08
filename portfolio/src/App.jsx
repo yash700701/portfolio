@@ -13,13 +13,13 @@ import Headder from './components/headder.jsx'
 import Skills from './components/Skills.jsx'
 import MyWork from './components/MyWork.jsx'
 import Footer from './components/Footer.jsx'
-import Qualifications from './components/Qualifications.jsx'
+// import About from './About.jsx'
 
 
 
 function App() {
   //darkMode
-  const [themeMode, setThemeMode] = useState("light")
+  const [themeMode, setThemeMode] = useState("dark")
   const lightTheme = ()=>{
     setThemeMode("light")
   }

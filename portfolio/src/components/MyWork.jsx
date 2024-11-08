@@ -19,11 +19,11 @@ function  MyWork() {
                     py-2
                     mx-2
                     rounded-full
-                    text-xl
+                    text-lg
                     font-semibold
                     `
                 }>
-                    Small Projects.
+                    Minor Projects.
                 </NavLink>
             </li>
            
@@ -45,12 +45,12 @@ function  MyWork() {
                     px-5
                     py-2
                     mx-2
-                    text-xl
+                    text-lg
                     font-semibold
                     
                     `
                 }>
-                    Deployed.
+                    Major Projects.
                 </NavLink>
             </li>
         </ul>

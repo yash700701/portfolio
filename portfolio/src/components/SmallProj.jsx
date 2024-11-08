@@ -2,72 +2,108 @@ import React, { useState } from 'react'
 import {motion} from 'framer-motion'
 import dice from './images/projects/Frame 1.png'
 import todo from './images/projects/todo.png'
+import lab from './images/projects/labb.png'
 
 
 function SmallProj() {
 
-// add about to dice
-function addComponentToDice() {
-    
-    // Create a new component (div element)
-   if(document.getElementById('dice').innerHTML == ``){
-     const component = document.createElement('div');
-     component.classList.add('component');
-     component.innerHTML = `
-       <div class="aboutdicetext">
-       about this dice project
-       <br>
-       </div>
-     `
-    // Create a delete button inside the component
-    const deleteButton = document.createElement('button');
-    deleteButton.innerText = '❌';
-    
-    
-    // Attach delete event to the delete button
-    deleteButton.addEventListener('click', function() {
-        component.remove();
-    });
+  // add about to dice
+  function addComponentToDice() {
+      
+      // Create a new component (div element)
+    if(document.getElementById('dice').innerHTML == ``){
+      const component = document.createElement('div');
+      component.classList.add('component');
+      component.innerHTML = `
+        <div class="aboutdicetext">
+        The Dice Game is a fun, interactive web application I developed using React, with HTML, CSS, and JavaScript forming the foundational technologies. The game is designed to showcase my skills in building dynamic and responsive user interfaces while applying modern React practices for state management and component-based architecture.
+        <br>
+        </div>
+      `
+      // Create a delete button inside the component
+      const deleteButton = document.createElement('button');
+      deleteButton.innerText = '❌';
+      
+      
+      // Attach delete event to the delete button
+      deleteButton.addEventListener('click', function() {
+          component.remove();
+      });
 
-    // Append the delete button to the component
-    component.appendChild(deleteButton);
+      // Append the delete button to the component
+      component.appendChild(deleteButton);
 
-    // Append the new component to the container
-    document.getElementById('dice').appendChild(component);}
-}
+      // Append the new component to the container
+      document.getElementById('dice').appendChild(component);}
+  }
 
-// add about to todo
-function addComponentToTodo() {
-    
-    // Create a new component (div element)
-   if(document.getElementById('todo').innerHTML == ``){
-     const component = document.createElement('div');
-     component.classList.add('component');
-     component.innerHTML = `
-       <div class="aboutdicetext">
-       about this todo project
-       <br>
-       </div>
-     `
-    // Create a delete button inside the component
-    const deleteButton = document.createElement('button');
-    deleteButton.innerText = '❌';
-    
-    
-    // Attach delete event to the delete button
-    deleteButton.addEventListener('click', function() {
-        component.remove();
-    });
+  // add about to todo
+  function addComponentToTodo() {
+      
+      // Create a new component (div element)
+    if(document.getElementById('todo').innerHTML == ``){
+      const component = document.createElement('div');
+      component.classList.add('component');
+      component.innerHTML = `
+        <div class="aboutdicetext">
+        I created a To-Do application using React, where I explored and implemented the Context API for state management. This project allowed me to understand the importance of avoiding prop-drilling and managing global states efficiently in a React application.
+        <br>
+        </div>
+      `
+      // Create a delete button inside the component
+      const deleteButton = document.createElement('button');
+      deleteButton.innerText = '❌';
+      
+      
+      // Attach delete event to the delete button
+      deleteButton.addEventListener('click', function() {
+          component.remove();
+      });
 
-    // Append the delete button to the component
-    component.appendChild(deleteButton);
+      // Append the delete button to the component
+      component.appendChild(deleteButton);
 
-    // Append the new component to the container
-    document.getElementById('todo').appendChild(component);}
-}
+      // Append the new component to the container
+      document.getElementById('todo').appendChild(component);}
+  }
+
+  // add about to lab
+  function addComponentToLab() {
+      
+      // Create a new component (div element)
+    if(document.getElementById('lab').innerHTML == ``){
+      const component = document.createElement('div');
+      component.classList.add('component');
+      component.innerHTML = `
+        <div class="aboutdicetext">
+        I created an Interactive Bookstore Application using pure JavaScript 
+        and DOM Manipulation, which allows users to register, log in 
+        (with validations), and add books from a bookstore to a cart in real time.
+        This project demonstrates how to build a dynamic and user-friendly web 
+        application without relying on frameworks.
+        <br>
+        </div>
+      `
+      // Create a delete button inside the component
+      const deleteButton = document.createElement('button');
+      deleteButton.innerText = '❌';
+      
+      
+      // Attach delete event to the delete button
+      deleteButton.addEventListener('click', function() {
+          component.remove();
+      });
+
+      // Append the delete button to the component
+      component.appendChild(deleteButton);
+
+      // Append the new component to the container
+      document.getElementById('lab').appendChild(component);}
+  }
   
   return (
     <div
+     id='smallProjects'
      className='w-full pt-10 h-auto text-center text-3xl flex justify-center dark:bg-black'>
         <motion.div
         initial={{opacity:0, y:10}}
@@ -75,25 +111,40 @@ function addComponentToTodo() {
         transition={{
           duration:1,
         }}
-        className='grid sm:grid-cols-2'>
-           <div  className='w-72  bg-black m-8 drop-shadow-2xl rounded-2xl dark:border-2' >
-              <img className='rounded-2xl' src={dice}/>
-              <div id='dice' className='text-white text-sm text-left '></div>
-              <ul className='flex justify-evenly'>
-                <li className='text-base text-white m-1 hover:text-emerald-700'><a href="#">Github</a></li>
-                <li className='text-base text-white m-1 hover:text-emerald-700'><a href="https://dicegamebyyash.netlify.app/" target="_blank" >Play</a></li>
-                <li className='text-base text-white m-1 hover:text-emerald-700'><button onClick={addComponentToDice} >About</button></li>
-              </ul>  
-           </div>
-           <div className='w-72 bg-black m-8 drop-shadow-2xl rounded-2xl dark:border-2'>
-              <img className='rounded-2xl' src={todo}/>
-              <div id='todo' className='text-white text-sm text-left '></div>
-              <ul className='flex justify-evenly'>
-                <li className='text-base text-white m-1 hover:text-emerald-700'><a href="#">Github</a></li>
-                <li className='text-base text-white m-1 hover:text-emerald-700'><a href="#" target="_blank" >Run</a></li>
-                <li className='text-base text-white m-1 hover:text-emerald-700'><button onClick={addComponentToTodo} >About</button></li>
-              </ul>
-           </div>
+        >
+          <div className='grid sm:grid-cols-2'>
+              <div  className='w-72  dark:bg-black m-8 drop-shadow-2xl rounded-2xl ' >
+                  <img className='rounded-t-2xl' src={dice}/>
+                  <div id='dice' className='text-white dark:text-black text-sm text-left '></div>
+                  <ul className='flex justify-evenly bg-black text-white dark:bg-white dark:text-black rounded-b-2xl mt-2 '>
+                    <li className='text-base  m-1 hover:text-emerald-700'><a href="https://github.com/yash700701/diceGame" target="_blank">Github</a></li>
+                    <li className='text-base  m-1 hover:text-emerald-700'><a href="https://dicegamebyyash.netlify.app/" target="_blank" >Play</a></li>
+                    <li className='text-base  m-1 hover:text-emerald-700'><button onClick={addComponentToDice} >About</button></li>
+                  </ul>  
+              </div>
+              <div className='w-72 dark:bg-black m-8 drop-shadow-2xl rounded-2xl '>
+                  <img className='rounded-t-2xl' src={todo}/>
+                  <div id='todo' className='text-white text-sm dark:text-black text-left '></div>
+                  <ul className='flex justify-evenly bg-black text-white dark:bg-white dark:text-black rounded-b-2xl mt-2'>
+                    <li className='text-base m-1 hover:text-emerald-700'><a href="https://github.com/yash700701/todo" target="_blank">Github</a></li>
+                    <li className='text-base m-1 hover:text-emerald-700'><a href="https://monumental-naiad-d18170.netlify.app/" target="_blank" >Run</a></li>
+                    <li className='text-base m-1 hover:text-emerald-700'><button onClick={addComponentToTodo} >About</button></li>
+                  </ul>
+              </div>
+          </div>
+          <div className='grid sm:grid-cols-2'>
+              <div  className='w-72  dark:bg-black m-8 drop-shadow-2xl rounded-2xl ' >
+                  <img className='rounded-t-2xl' src={lab}/>
+                  <div id='lab' className='text-white dark:text-black text-sm text-left '></div>
+                  <ul className='flex justify-evenly bg-black text-white dark:bg-white dark:text-black rounded-b-2xl mt-2 '>
+                    <li className='text-base  m-1 hover:text-emerald-700'><a href="https://github.com/yash700701/web-D-Lab" target="_blank">Github</a></li>
+                    <li className='text-base  m-1 hover:text-emerald-700'><a href="https://webdlabproject.netlify.app" target="_blank" >Run</a></li>
+                    <li className='text-base  m-1 hover:text-emerald-700'><button onClick={addComponentToLab} >About</button></li>
+                  </ul>  
+              </div>
+              
+          </div>
+           
         </motion.div>
      </div>
   )
