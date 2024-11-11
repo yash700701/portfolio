@@ -71,13 +71,23 @@ function Home() {
           >
           {/* {para} */}
           <p>
-          Hello! I’m Yash Tiwari, a passionate front-end developer based in Noida. I specialize in crafting visually appealing and highly interactive websites using technologies like HTML, CSS, JavaScript, and modern frameworks such as React. I have honed my skills in building responsive and user-friendly interfaces that prioritize both aesthetics and functionality.
-
-I’ve worked on diverse projects ranging from simple landing pages to complex web applications. I’m driven by a desire to create intuitive and seamless digital experiences that delight users and fulfill client goals.
-
-In addition to my technical skills, I am committed to continuous learning and staying up-to-date with the latest industry trends. I’m adept at collaborating with teams, understanding user needs, and translating ideas into pixel-perfect, performant code.
-
-Feel free to explore my portfolio and get in touch if you’re looking for a developer who can bring your ideas to life or simply want to connect!
+          Hello! I’m Yash Tiwari, a passionate front-end developer based in Noida.
+          I specialize in crafting visually appealing and highly interactive
+          websites using technologies like HTML, CSS, JavaScript, and modern 
+          frameworks such as React. I have honed my skills in building responsive
+          and user-friendly interfaces that prioritize both aesthetics and 
+          functionality.
+          I’ve worked on diverse projects ranging from simple landing pages to
+          complex web applications. I’m driven by a desire to create intuitive 
+          and seamless digital experiences that delight users and fulfill client
+          goals.
+          In addition to my technical skills, I am committed to continuous 
+          learning and staying up-to-date with the latest industry trends.
+          I’m adept at collaborating with teams, understanding user needs, and 
+          translating ideas into pixel-perfect, performant code.
+          Feel free to explore my portfolio and get in touch if you’re looking 
+          for a developer who can bring your ideas to life or simply want to 
+          connect!
           </p>
           </motion.p>
         </div>
@@ -85,7 +95,7 @@ Feel free to explore my portfolio and get in touch if you’re looking for a dev
       </div>
 
     </motion.div>
-    <div className='mt-4 ml-2 dark:text-white'>
+    <div className='mt-4 ml-2 text-white'>
       <button className='bg-gradient-to-r from-cyan-500 to-blue-500 p-2 rounded-lg hover:text-black'>Download Resume</button>
     
     

@@ -20,7 +20,7 @@ function Headder() {
   
    <div id='headerContainer' className='flex justify-center dark:bg-black '>
       <div 
-      className='w-full border-2 h-16 mx-2 my-2 rounded-xl bg-slate-900 flex justify-between  dark:border-2 '>
+      className='w-[100%] border-2 h-16 mx-2 my-2 rounded-xl bg-slate-900 flex justify-between  dark:border-2 '>
         <h1 className='px-5 py-5  text-slate-300 font-extrabold' style={{fontSize: "1rem"}}>
           portfolio.yash
         </h1>
