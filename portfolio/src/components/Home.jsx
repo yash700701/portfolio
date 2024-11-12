@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { useState, useEffect } from 'react'
 import {motion} from 'framer-motion'
 import {useTypewriter , curser} from 'react-simple-typewriter'
-import yash from './images/yash.jpg'
+import yash from './images/Yash.png'
 import { ThemeProvider } from './UserContext'
 
 
@@ -13,13 +13,12 @@ function Home() {
     loop : {},
   })
 
-  const [para, setPara] = useState("I\'am undergraduate student from JSS Noida, Currently doing Btech in Computer Science.")
+  const [para, setPara] = useState('Solved✅ 100+ Questions on Leetcode 🔥')
   useEffect(() => {
-    const paras = ['Yash is also an instructor at a leading YC EdTech platform',
-                   'having taught MERN Stack to over 100,000+ students.',
-                   'Yash also has interests in Algo Trading, UI Designing and Product Designing.',
-                   "I\'am undergraduate student from JSS Noida, Currently doing Btech in Computer Science."
-                  ];
+    const paras = [`Solved✅ 100+ Questions on Leetcode 🔥 `,
+                   '💯+ Score on GeeksForGeeks'
+    ]
+                   
     let index = 0;
       setInterval(() => {
       index = (index + 1) % paras.length; 
@@ -51,8 +50,11 @@ function Home() {
             <img className='h-60 rounded-xl w-60 object-cover'  src={yash} alt="profile-pic" />
           </div>
 
-          <div className='h-60 mx-2 my-2 rounded-xl bg-gradient-to-r from-slate-900 to-slate-700 w-4/5'>
+          <div className='h-60 mx-2 my-2 rounded-xl  bg-gradient-to-r from-slate-900 to-slate-700 w-4/5'>
           <h1 className='text-white text-xl  p-4' style={{fontFamily:'Ubuntu'}}>Some Of My <span style={{fontFamily:"Playfair Display", color:"indianred"}}>Interesting Stats</span></h1>
+          <p className='text-white p-4 text-xl font-bold'>
+          {para}
+          </p>
           </div>
         </div>
       </div>
@@ -69,7 +71,6 @@ function Home() {
             duration:1,
           }}
           >
-          {/* {para} */}
           <p>
           Hello! I’m Yash Tiwari, a passionate front-end developer based in Noida.
           I specialize in crafting visually appealing and highly interactive
