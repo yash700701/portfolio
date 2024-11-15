@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {motion} from 'framer-motion'
 import dice from './images/projects/Frame 1.png'
 import todo from './images/projects/todo.png'
@@ -7,8 +7,7 @@ import lab from './images/projects/labb.png'
 
 function SmallProj() {
 
-  // add about to dice
-  function addComponentToDice() {
+  function addComponentToDice(){
       
       // Create a new component (div element)
     if(document.getElementById('dice').innerHTML == ``){
@@ -34,11 +33,10 @@ function SmallProj() {
       component.appendChild(deleteButton);
 
       // Append the new component to the container
-      document.getElementById('dice').appendChild(component);}
+      document.getElementById('dice').appendChild(component);
+    }  
   }
-
-  // add about to todo
-  function addComponentToTodo() {
+  function addComponentToTodo(){
       
       // Create a new component (div element)
     if(document.getElementById('todo').innerHTML == ``){
@@ -66,9 +64,7 @@ function SmallProj() {
       // Append the new component to the container
       document.getElementById('todo').appendChild(component);}
   }
-
-  // add about to lab
-  function addComponentToLab() {
+  function addComponentToLab(){
       
       // Create a new component (div element)
     if(document.getElementById('lab').innerHTML == ``){
@@ -108,13 +104,15 @@ function SmallProj() {
         <motion.div
         initial={{opacity:0, y:10}}
         animate={{opacity:1, y:0}}
+        className='grid sm:grid-cols-2'
         transition={{
           duration:1,
         }}
         >
-          <div className='grid sm:grid-cols-2'>
               <div  className='w-72  dark:bg-black m-8 drop-shadow-2xl rounded-2xl ' >
-                  <img className='rounded-t-2xl' src={dice}/>
+                  <div className='w-72 h-[250px] bg-gray-800 rounded-t-2xl'>
+                      <img className='rounded-t-2xl' src={dice}/>
+                  </div>
                   <div id='dice' className='text-white dark:text-black text-sm text-left '></div>
                   <ul className='flex justify-evenly bg-black text-white dark:bg-white dark:text-black rounded-b-2xl mt-2 '>
                     <li className='text-base  m-1 hover:text-emerald-700'><a href="https://github.com/yash700701/diceGame" target="_blank">Github</a></li>
@@ -123,7 +121,9 @@ function SmallProj() {
                   </ul>  
               </div>
               <div className='w-72 dark:bg-black m-8 drop-shadow-2xl rounded-2xl '>
-                  <img className='rounded-t-2xl' src={todo}/>
+                  <div className='w-72 h-[250px] bg-gray-800 rounded-t-2xl'>
+                      <img className='rounded-t-2xl' src={todo}/>
+                  </div>
                   <div id='todo' className='text-white text-sm dark:text-black text-left '></div>
                   <ul className='flex justify-evenly bg-black text-white dark:bg-white dark:text-black rounded-b-2xl mt-2'>
                     <li className='text-base m-1 hover:text-emerald-700'><a href="https://github.com/yash700701/todo" target="_blank">Github</a></li>
@@ -131,20 +131,17 @@ function SmallProj() {
                     <li className='text-base m-1 hover:text-emerald-700'><button onClick={addComponentToTodo} >About</button></li>
                   </ul>
               </div>
-          </div>
-          <div className='grid sm:grid-cols-2'>
               <div  className='w-72  dark:bg-black m-8 drop-shadow-2xl rounded-2xl ' >
-                  <img className='rounded-t-2xl' src={lab}/>
+                  <div className='w-72 h-[250px] bg-gray-800 rounded-t-2xl'>
+                      <img className='rounded-t-2xl' src={lab}/>
+                  </div>    
                   <div id='lab' className='text-white dark:text-black text-sm text-left '></div>
                   <ul className='flex justify-evenly bg-black text-white dark:bg-white dark:text-black rounded-b-2xl mt-2 '>
                     <li className='text-base  m-1 hover:text-emerald-700'><a href="https://github.com/yash700701/web-D-Lab" target="_blank">Github</a></li>
                     <li className='text-base  m-1 hover:text-emerald-700'><a href="https://webdlabproject.netlify.app" target="_blank" >Run</a></li>
                     <li className='text-base  m-1 hover:text-emerald-700'><button onClick={addComponentToLab} >About</button></li>
                   </ul>  
-              </div>
-              
-          </div>
-           
+              </div> 
         </motion.div>
      </div>
   )

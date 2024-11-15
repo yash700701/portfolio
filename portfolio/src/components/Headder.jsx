@@ -1,18 +1,24 @@
 import React, { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import useTheme from './UserContext'
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
+
 
 
 function Headder() {
  
   //darkModeToggler
   const {themeMode, darkTheme, lightTheme} = useTheme()
+  const [isDarkMode, setDarkMode] = useState(true);
+
   const onChngBtn = (e)=>{
-    const darkModeStatus = e.currentTarget.checked
-    if(darkModeStatus){
-      darkTheme()
-    }else{
+    // const darkModeStatus = e.currentTarget.checked
+    if(isDarkMode){
       lightTheme()
+      setDarkMode(false)
+    }else{
+      darkTheme()
+      setDarkMode(true)
     }
   }
 
@@ -21,7 +27,7 @@ function Headder() {
    <div id='headerContainer' className='flex justify-center dark:bg-black '>
       <div 
       className='w-[100%] border-2 h-16 mx-2 my-2 rounded-xl bg-slate-900 flex justify-between  dark:border-2 '>
-        <h1 className='px-5 py-5  text-slate-300 font-extrabold' style={{fontSize: "1rem"}}>
+        <h1 className='px-5 py-5  font-extrabold text-[indianred]' style={{fontSize: "1rem"}}>
           portfolio.yash
         </h1>
         <ul className='flex'>
@@ -62,14 +68,16 @@ function Headder() {
                     Qualification.
                 </NavLink>
             </li>
-             
             <li className='mt-6 mr-4 '  style={{fontSize: "0.7rem" , marginLeft: "1rem"}}>
-              <span className='text-white text-xs font-semibold '>dark </span>
-              <input type="checkbox" value="" className=' bg-black' onChange={onChngBtn} checked={themeMode==="dark"}/>
+                <DarkModeSwitch
+                    style={{ marginBottom: '2rem' }}
+                    checked={isDarkMode}
+                    onChange={onChngBtn}
+                    className='text-white'
+                    size={20}
+                />
             </li>
-        
-        </ul>
-        
+        </ul>     
       </div>
    </div>
   
