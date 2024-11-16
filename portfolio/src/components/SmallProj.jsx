@@ -100,7 +100,7 @@ function SmallProj() {
   return (
     <div
      id='smallProjects'
-     className='w-full pt-10 h-auto text-center text-3xl flex justify-center dark:bg-black'>
+     className='w-full pt-10 pb-20 h-auto text-center text-3xl flex justify-center dark:bg-black'>
         <motion.div
         initial={{opacity:0, y:10}}
         animate={{opacity:1, y:0}}

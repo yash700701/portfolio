@@ -3,7 +3,7 @@ import React from 'react'
 function Educational() {
   return (
     <div
-    className='text-center dark:bg-black'
+    className='text-center dark:bg-black pb-20'
     >
        {/* college */}
        <div className='pt-10 '>

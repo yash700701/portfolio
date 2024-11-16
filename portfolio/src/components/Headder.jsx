@@ -31,7 +31,7 @@ function Headder() {
           portfolio.yash
         </h1>
         <ul className='flex'>
-        <li className='mt-6 mx-2' style={{fontSize: "0.7rem"}}>
+        <li className='mt-6 mx-1' style={{fontSize: "0.7rem"}}>
             <NavLink 
                 to="/"
                 className={({isActive})=>
@@ -49,7 +49,7 @@ function Headder() {
                     Home.
                 </NavLink>
             </li>
-            <li className='mt-6 mx-2' style={{fontSize: "0.7rem"}}>
+            <li className='mt-6 mx-1' style={{fontSize: "0.7rem"}}>
             <NavLink 
                 to="/qualification"
                 className={({isActive})=>
@@ -68,7 +68,7 @@ function Headder() {
                     Qualification.
                 </NavLink>
             </li>
-            <li className='mt-6 mr-4 '  style={{fontSize: "0.7rem" , marginLeft: "1rem"}}>
+            <li className='mt-5 mr-4 '  style={{fontSize: "0.7rem" , marginLeft: "1rem"}}>
                 <DarkModeSwitch
                     style={{ marginBottom: '2rem' }}
                     checked={isDarkMode}
