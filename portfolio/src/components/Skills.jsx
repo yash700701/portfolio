@@ -16,6 +16,8 @@ import postman from './images/icons/Postman.png'
 import react from './images/icons/React.png'
 import tailwind from './images/icons/Tailwind.png'
 import appwrite from './images/icons/appwrite.png'
+import redux from './images/icons/Redux.png'
+
 
 const fadeIn = (direction, delay) => {
     return{
@@ -87,15 +89,12 @@ function Skills() {
                 className='flex justify-evenly'>  
                   <img src={css3}/>
                   <img src={github}/>
-                  <img src={cpp}/>
+                  <img src={redux}/>
                   <img src={appwrite}/>
                 </motion.div>
             </div>
         </div>
-        
-        
       </div>
- 
   )
 }
 

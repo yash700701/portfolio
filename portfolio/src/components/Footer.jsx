@@ -5,7 +5,7 @@ function Footer() {
 
   return (
     <>
-    <div className='text-center text-xs'>
+    <div className='text-center text-xs pt-52 bg-black'>
     <p className='dark:bg-black dark:text-slate-700'>views : <span className='text-red-800'>im working on this functionality</span></p>
     </div>
     <footer className='flex pt-24 justify-center dark:bg-black'>

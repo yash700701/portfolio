@@ -68,7 +68,7 @@ function Headder() {
                     Qualification.
                 </NavLink>
             </li>
-            <li className='mt-5 mr-4 '  style={{fontSize: "0.7rem" , marginLeft: "1rem"}}>
+            <li className='mt-6 mr-4 '  style={{fontSize: "0.7rem" , marginLeft: "1rem"}}>
                 <DarkModeSwitch
                     style={{ marginBottom: '2rem' }}
                     checked={isDarkMode}
