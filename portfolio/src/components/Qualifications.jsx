@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 
 function Qualifications() {
   return (
-    <div className='w-full pt-20 h-auto flex flex-col items-center text-center dark:bg-black'>
+    <div className='w-full pt-[160px] h-auto flex flex-col items-center text-center dark:bg-black'>
     <h1 className='my-10 text-3xl font-bold dark:text-white' >Qualifications.</h1>
     <div className=' h-auto rounded-full bg-slate-300 '>
     <ul className='flex justify-evenly items-center'>

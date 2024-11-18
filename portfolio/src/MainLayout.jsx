@@ -1,11 +1,12 @@
 //router
 import { Outlet } from 'react-router-dom'
 //components
-import Home from './components/home.jsx'
+import Home from './components/Home.jsx'
 import Headder from './components/Headder.jsx'
 import Skills from './components/Skills.jsx'
 import MyWork from './components/MyWork.jsx'
 import Footer from './components/Footer.jsx'
+import Count from './components/Count.jsx'
 
 function MainLayout() {
 
@@ -16,6 +17,7 @@ function MainLayout() {
     <Skills/>
     <MyWork/>
        <Outlet/>
+    <Count/>   
     <Footer/>
     </>
   )

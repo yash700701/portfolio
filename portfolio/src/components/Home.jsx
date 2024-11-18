@@ -29,7 +29,7 @@ function Home() {
   return (
    
    <div className='dark:bg-black'>
-     <motion.div id='homeContainer' className='dark:bg-black'  
+     <motion.div id='homeContainer' className='dark:bg-black pt-[70px]'  
     initial={{opacity:0, y:10}}
     animate={{opacity:1, y:0}}
     transition={{
