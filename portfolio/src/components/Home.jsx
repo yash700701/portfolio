@@ -38,7 +38,7 @@ function Home() {
       <div className='grid sm:grid-cols-10 grid-cols-1'>
           <div className='h-60 sm:col-span-5 mx-2 my-2 flex  rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 '>
               <div className='my-20 ml-5'>
-                  <h1 className='text-3xl py-1 font-bold'>Hi There,</h1>
+                  <h1 className='text-3xl py-1 font-bold '  >Hi There,</h1>
                   <h1 className='text-3xl font-bold'>I'm <span className='text-neutral-50 text-5xl'>Yash Tiwari</span></h1>
                   <h1 className='text-xl py-1 font-semibold'>I'm Into <span className='text-3xl text-sky-950 ' style={{fontFamily: 'Playfair Display'}}>{text}</span></h1>
               </div>
@@ -50,7 +50,7 @@ function Home() {
               </div>
 
               <div className='h-60 mx-2 my-2 rounded-xl  bg-gradient-to-r from-slate-900 to-slate-700 w-4/5'>
-                  <h1 className='text-white text-xl  p-4' style={{fontFamily:'Ubuntu'}}>Some Of My <span style={{fontFamily:"Playfair Display", color:"indianred"}}>Interesting Stats</span></h1>
+                  <h1 className='text-white text-xl p-4 font-bold ' style={{fontFamily:'Doto'}}>Some Of My <span style={{fontFamily:"Playfair Display", color:"indianred"}}>Interesting Stats</span></h1>
                   <p className='text-white text-2xl p-4 font-bold'>
                       {para}
                   </p>
@@ -60,7 +60,7 @@ function Home() {
       
       <div className=''>
         <div className='mx-2 mt-2 rounded-xl bg-gradient-to-r from-green-200 to-emerald-600' >
-          <p className='text-left pl-5 pt-4 text-lg font-semibold'>About Me.</p>
+          <p className='text-left pl-5 pt-4 text-lg font-bold'  style={{fontFamily: 'Doto'}}>About Me.</p>
           <motion.p
           className='text-base font-semibold p-5 text-slate-800'
           initial={{opacity:0, y:5}}

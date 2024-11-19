@@ -43,7 +43,7 @@ const fadeIn = (direction, delay) => {
 function Skills() {
   return (
       <div id='icons' className='w-full pt-10 h-auto text-center dark:bg-black dark:text-white'>
-        <h1 className='py-8 text-3xl font-bold' >Technical Skills.</h1>
+        <h1 className='py-8 text-3xl font-bold' style={{fontFamily: 'Doto'}} >Technical Skills.</h1>
         <div className='grid sm:grid-cols-2'>
             <div className=''>
                 <motion.div 
@@ -54,8 +54,8 @@ function Skills() {
                 className='flex justify-evenly'>  
                   <img className='' src={html5} />
                   <img className='' src={js} />
-                  <img className='' src={mongo}  />
-                  <img className='' src={node}  />
+                  <img className='' src={postman}  />
+                  <img className='' src={react}  />
                 </motion.div>
                 <motion.div 
                 variants={fadeIn('up', 0.2)}
@@ -63,10 +63,10 @@ function Skills() {
                 whileInView={"show"}
                 viewport={{once:false, amount:0.7}} 
                 className='flex justify-evenly'>  
-                  <img className='' src={postman}  />
-                  <img className='' src={react}  />
+                 
                   <img className='' src={tailwind} />
                   <img className='' src={c} alt="" srcset="" />
+                  <img src={cpp}/>
                 </motion.div>
             </div>
             <div className=''>
@@ -76,10 +76,10 @@ function Skills() {
                 whileInView={"show"}
                 viewport={{once:false, amount:0.7}} 
                 className='flex justify-evenly'>  
-                  <img src={cpp}/>
                   <img src={figma}/>
-                  <img src={firebase}/>
                   <img src={git}/>
+                  <img src={css3}/>
+                  <img src={github}/>
                 </motion.div>
                 <motion.div
                 variants={fadeIn('up', 0.2)}
@@ -87,8 +87,6 @@ function Skills() {
                 whileInView={"show"}
                 viewport={{once:false, amount:0.7}} 
                 className='flex justify-evenly'>  
-                  <img src={css3}/>
-                  <img src={github}/>
                   <img src={redux}/>
                   <img src={appwrite}/>
                 </motion.div>

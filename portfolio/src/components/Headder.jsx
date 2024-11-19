@@ -27,7 +27,7 @@ function Headder() {
    <div id='headerContainer' className='flex justify-center dark:bg-black '>
       <div 
       className='w-[100%] top-0 fixed h-16 z-50 bg-gradient-to-tl from-[rgba(0,0,0,0.8)] from-10% via-[rgba(30,30,30,0.8)] via-30% to-[rgba(0,0,0,0.8)] to-90% backdrop-blur-[4px] flex justify-between '>
-        <h1 className='px-5 py-5  font-extrabold text-[indianred]' style={{fontSize: "1rem"}}>
+        <h1 className='px-5 py-5  font-extrabold text-[indianred]' style={{fontSize: "1rem", fontFamily: "Doto"}}>
           portfolio.yash
         </h1>
         <ul className='flex'>
