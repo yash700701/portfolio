@@ -84,7 +84,7 @@ function Home() {
               for a developer who can bring your ideas to life or simply want to 
               connect! 🔗
               <div className='pt-5 text-white'>
-                  <button className='underline pt-2 rounded-lg hover:text-[indianred] text-sky-700' ><a href="http://">Resume</a></button>
+                  <button className='underline pt-2 rounded-lg hover:text-[indianred] text-sky-700' ><a href="https://1drv.ms/b/c/ee5f762a993e71ba/Ecl83xAT98lMnoyfMYaIFVABOPteQaV1wiUI7ehcNCRr_Q?e=FfaUVm" target='blank'>Resume</a></button>
               </div>
           </p>
           </motion.p>
