@@ -1,8 +1,9 @@
 import React from 'react'
 import {motion} from 'framer-motion'
-import dice from './images/projects/Frame 1.png'
-import todo from './images/projects/todo.png'
-import lab from './images/projects/labb.png'
+import dice from './images/projects/Frame 1 - copy.png'
+import todo from './images/projects/todo - copy.png'
+import lab from './images/projects/labb - copy.png'
+import jwel from './images/projects/jwel - copy.png'
 
 
 function SmallProj() {
@@ -96,6 +97,34 @@ function SmallProj() {
       // Append the new component to the container
       document.getElementById('lab').appendChild(component);}
   }
+  function addComponentToJwel(){
+      
+      // Create a new component (div element)
+    if(document.getElementById('jwel').innerHTML == ``){
+      const component = document.createElement('div');
+      component.classList.add('component');
+      component.innerHTML = `
+        <div class="aboutdicetext">
+       * Designed by <a style="color:indianred;" href="https://www.linkedin.com/in/shaurya-singh-siwach/" target="_blank">@Decipher</a>
+        <br>
+        </div>
+      `
+      // Create a delete button inside the component
+      const deleteButton = document.createElement('button');
+      deleteButton.innerText = '❌';
+      
+      
+      // Attach delete event to the delete button
+      deleteButton.addEventListener('click', function() {
+          component.remove();
+      });
+
+      // Append the delete button to the component
+      component.appendChild(deleteButton);
+
+      // Append the new component to the container
+      document.getElementById('jwel').appendChild(component);}
+  }
   
   return (
     <div
@@ -140,6 +169,17 @@ function SmallProj() {
                     <li className='text-base  m-1 hover:text-emerald-700'><a href="https://github.com/yash700701/web-D-Lab" target="_blank">Github</a></li>
                     <li className='text-base  m-1 hover:text-emerald-700'><a href="https://webdlabproject.netlify.app" target="_blank" >Run</a></li>
                     <li className='text-base  m-1 hover:text-emerald-700'><button onClick={addComponentToLab} >About</button></li>
+                  </ul>  
+              </div> 
+              <div  className='w-72  dark:bg-black m-8 drop-shadow-2xl rounded-2xl ' >
+                  <div className='w-72 h-[250px] bg-gray-800 rounded-t-2xl'>
+                      <img className='rounded-t-2xl' src={jwel}/>
+                  </div>    
+                  <div id='jwel' className='text-white dark:text-black text-sm text-left '></div>
+                  <ul className='flex justify-evenly bg-black text-white dark:bg-white dark:text-black rounded-b-2xl mt-2 '>
+                    <li className='text-base  m-1 hover:text-emerald-700'><a href="https://github.com/yash700701/jewellery.LandingPage" target="_blank">Github</a></li>
+                    <li className='text-base  m-1 hover:text-emerald-700'><a href="https://vermillion-marigold-8d76ea.netlify.app/" target="_blank" >Run</a></li>
+                    <li className='text-base  m-1 hover:text-emerald-700'><button onClick={addComponentToJwel} >About</button></li>
                   </ul>  
               </div> 
         </motion.div>

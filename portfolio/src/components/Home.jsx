@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { useState, useEffect } from 'react'
 import {motion} from 'framer-motion'
 import {useTypewriter , curser} from 'react-simple-typewriter'
-import yash from './images/Yash.png'
+import yash from './images/YashReduced.png'
 
 
 function Home() {
@@ -84,7 +84,7 @@ function Home() {
               for a developer who can bring your ideas to life or simply want to 
               connect! 🔗
               <div className='pt-5 text-white'>
-                  <button className='underline pt-2 rounded-lg hover:text-[indianred] text-sky-700' ><a href="https://1drv.ms/b/c/ee5f762a993e71ba/Ecl83xAT98lMnoyfMYaIFVABOPteQaV1wiUI7ehcNCRr_Q?e=FfaUVm" target='blank'>Resume</a></button>
+                  <button className='underline pt-2 rounded-lg hover:text-[indianred] text-sky-700' ><a href="https://onedrive.live.com/?cid=EE5F762A993E71BA&id=EE5F762A993E71BA%21s555d563b10524e6bb000974f8c2a436a&parId=EE5F762A993E71BA%21105&o=OneUp" target='blank'>Resume</a></button>
               </div>
           </p>
           </motion.p>
