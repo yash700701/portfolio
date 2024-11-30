@@ -51,7 +51,7 @@ function Home() {
 
               <div className='h-60 mx-2 my-2 rounded-xl  bg-gradient-to-r from-slate-900 to-slate-700 w-4/5'>
                   <h1 className='text-white text-xl p-4 font-bold ' style={{fontFamily:'Doto'}}>Some Of My <span style={{fontFamily:"Playfair Display", color:"indianred"}}>Interesting Stats</span></h1>
-                  <p className='text-white text-2xl p-4 font-bold'>
+                  <p className='text-white text-base sm:text-xl p-4 font-bold'>
                       {para}
                   </p>
               </div>
@@ -62,7 +62,7 @@ function Home() {
         <div className='mx-2 mt-2 rounded-xl bg-gradient-to-r from-green-200 to-emerald-600' >
           <p className='text-left pl-5 pt-4 text-lg font-bold'  style={{fontFamily: 'Doto'}}>About Me.</p>
           <motion.p
-          className='text-base font-semibold p-5 text-slate-800'
+          className='text-sm sm:text-base p-5 text-slate-800'
           initial={{opacity:0, y:5}}
           animate={{opacity:1, y:0}}
           transition={{

@@ -15,11 +15,12 @@ function  MyWork() {
                     `
                     ${isActive ? "text-black  bg-white dark:bg-black dark:text-white" : "text-black hover:bg-white dark:hover:bg-black dark:hover:text-white" }
                     transition-all
-                    px-3
+                    px-4
                     py-2
                     mx-2
                     rounded-full
-                    text-lg
+                    text-sm
+                    sm:text-lg
                     font-semibold
                     `
                 }>
@@ -42,10 +43,11 @@ function  MyWork() {
                     ${isActive ? "text-black bg-white  dark:bg-black dark:text-white" : "text-black hover:bg-white  dark:hover:bg-black dark:hover:text-white" }
                     rounded-full
                     transition-all
-                    px-5
+                    px-4
                     py-2
                     mx-2
-                    text-lg
+                    text-sm
+                    sm:text-lg
                     font-semibold
                     
                     `

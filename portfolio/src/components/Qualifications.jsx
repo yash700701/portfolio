@@ -18,7 +18,8 @@ function Qualifications() {
                 py-2
                 mx-2
                 rounded-full
-                 text-lg
+                text-sm
+                sm:text-lg
                 font-semibold
                 `
             }>
@@ -44,7 +45,8 @@ function Qualifications() {
                 px-3
                 py-2
                 mx-2
-                text-lg
+                text-sm
+                sm:text-lg
                 font-semibold
                 
                 `
