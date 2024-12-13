@@ -1,19 +1,21 @@
+import { div } from 'framer-motion/client'
 import React from 'react'
 import {Link, NavLink} from 'react-router-dom'
 // import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
 
 function  MyWork() {
   return (
-    <div className='w-full pt-20 pb-16 h-auto flex flex-col items-center text-center dark:bg-black'>
-        <h1 className='my-10 text-3xl font-bold dark:text-white'  style={{fontFamily: 'doto'}}>Find My Work.</h1>
-        <div className='h-auto rounded-full bg-slate-300 '>
+    <div className='px-2  dark:bg-black'>
+        <div className='w-full rounded-xl border-[1px] dark:border-white border-black h-auto flex flex-col items-center text-center dark:bg-black'>
+        <h1 className='my-5 text-3xl font-bold dark:text-white'  style={{fontFamily: 'doto'}}>Find My Work.</h1>
+        <div className='h-auto my-5 rounded-full border-[1px] dark:border-white border-black '>
         <ul className='flex justify-evenly items-center'>
             <li>
                 <NavLink 
                 to="/smallprojects"
                 className={({isActive})=>
                     `
-                    ${isActive ? "text-black  bg-white dark:bg-black dark:text-white" : "text-black hover:bg-white dark:hover:bg-black dark:hover:text-white" }
+                    ${isActive ? "text-sky-700" : "dark:text-white" }
                     transition-all
                     px-4
                     py-2
@@ -40,7 +42,7 @@ function  MyWork() {
                 to="/largeprojects"
                 className={({isActive})=>
                     `
-                    ${isActive ? "text-black bg-white  dark:bg-black dark:text-white" : "text-black hover:bg-white  dark:hover:bg-black dark:hover:text-white" }
+                    ${isActive ? "text-sky-700" : "dark:text-white"  }
                     rounded-full
                     transition-all
                     px-4
@@ -57,6 +59,7 @@ function  MyWork() {
             </li>
         </ul>
         </div>
+    </div>
     </div>
   )
 }

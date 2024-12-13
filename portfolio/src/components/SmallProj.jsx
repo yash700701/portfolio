@@ -22,7 +22,7 @@ function SmallProj() {
       `
       // Create a delete button inside the component
       const deleteButton = document.createElement('button');
-      deleteButton.innerText = '❌';
+      deleteButton.innerText = 'X';
       
       
       // Attach delete event to the delete button
@@ -51,7 +51,7 @@ function SmallProj() {
       `
       // Create a delete button inside the component
       const deleteButton = document.createElement('button');
-      deleteButton.innerText = '❌';
+      deleteButton.innerText = 'X';
       
       
       // Attach delete event to the delete button
@@ -83,7 +83,7 @@ function SmallProj() {
       `
       // Create a delete button inside the component
       const deleteButton = document.createElement('button');
-      deleteButton.innerText = '❌';
+      deleteButton.innerText = 'X';
       
       
       // Attach delete event to the delete button
@@ -111,7 +111,7 @@ function SmallProj() {
       `
       // Create a delete button inside the component
       const deleteButton = document.createElement('button');
-      deleteButton.innerText = '❌';
+      deleteButton.innerText = 'X';
       
       
       // Attach delete event to the delete button
@@ -127,9 +127,10 @@ function SmallProj() {
   }
   
   return (
-    <div
+    <div className='pt-4 px-2 dark:bg-black'>
+        <div
      id='smallProjects'
-     className='w-full pt-10  h-auto text-center text-3xl flex justify-center dark:bg-black'>
+     className='w-full border-[1px] dark:border-white border-black rounded-xl pt-5  h-auto text-center text-3xl flex justify-center dark:bg-black'>
         <motion.div
         initial={{opacity:0, y:10}}
         animate={{opacity:1, y:0}}
@@ -139,44 +140,27 @@ function SmallProj() {
         }}
         >
               <div  className='w-72  dark:bg-black m-8 drop-shadow-2xl rounded-2xl ' >
-                  <div className='w-72 h-[250px] bg-gray-800 rounded-t-2xl'>
-                      <img className='rounded-t-2xl' src={dice}/>
-                  </div>
-                  <div id='dice' className='text-white dark:text-black text-sm text-left '></div>
-                  <ul className='flex justify-evenly bg-black text-white dark:bg-white dark:text-black rounded-b-2xl mt-2 '>
+                  <div className='dark:text-white  text-left text-xl'>DICE GAME</div>
+                  <div id='dice' className='text-white  text-left text-xl'></div>
+                  <ul className='flex justify-evenly dark:bg-black dark:text-white border-[1px] dark:border-white border-black rounded-xl mt-2 '>
                     <li className='text-base  m-1 hover:text-emerald-700'><a href="https://github.com/yash700701/diceGame" target="_blank">Github</a></li>
                     <li className='text-base  m-1 hover:text-emerald-700'><a href="https://dicegamebyyash.netlify.app/" target="_blank" >Play</a></li>
                     <li className='text-base  m-1 hover:text-emerald-700'><button onClick={addComponentToDice} >About</button></li>
                   </ul>  
               </div>
               <div className='w-72 dark:bg-black m-8 drop-shadow-2xl rounded-2xl '>
-                  <div className='w-72 h-[250px] bg-gray-800 rounded-t-2xl'>
-                      <img className='rounded-t-2xl' src={todo}/>
-                  </div>
-                  <div id='todo' className='text-white text-sm dark:text-black text-left '></div>
-                  <ul className='flex justify-evenly bg-black text-white dark:bg-white dark:text-black rounded-b-2xl mt-2'>
+                  <div  className='dark:text-white  text-left text-xl'>TODO LIST</div>
+                  <div id='todo' className='text-white  text-left text-xl'></div>
+                  <ul className='flex justify-evenly dark:bg-black dark:text-white border-[1px] dark:border-white border-black rounded-xl mt-2'>
                     <li className='text-base m-1 hover:text-emerald-700'><a href="https://github.com/yash700701/todo" target="_blank">Github</a></li>
                     <li className='text-base m-1 hover:text-emerald-700'><a href="https://monumental-naiad-d18170.netlify.app/" target="_blank" >Run</a></li>
                     <li className='text-base m-1 hover:text-emerald-700'><button onClick={addComponentToTodo} >About</button></li>
                   </ul>
               </div>
               <div  className='w-72  dark:bg-black m-8 drop-shadow-2xl rounded-2xl ' >
-                  <div className='w-72 h-[250px] bg-gray-800 rounded-t-2xl'>
-                      <img className='rounded-t-2xl' src={lab}/>
-                  </div>    
-                  <div id='lab' className='text-white dark:text-black text-sm text-left '></div>
-                  <ul className='flex justify-evenly bg-black text-white dark:bg-white dark:text-black rounded-b-2xl mt-2 '>
-                    <li className='text-base  m-1 hover:text-emerald-700'><a href="https://github.com/yash700701/web-D-Lab" target="_blank">Github</a></li>
-                    <li className='text-base  m-1 hover:text-emerald-700'><a href="https://webdlabproject.netlify.app" target="_blank" >Run</a></li>
-                    <li className='text-base  m-1 hover:text-emerald-700'><button onClick={addComponentToLab} >About</button></li>
-                  </ul>  
-              </div> 
-              <div  className='w-72  dark:bg-black m-8 drop-shadow-2xl rounded-2xl ' >
-                  <div className='w-72 h-[250px] bg-gray-800 rounded-t-2xl'>
-                      <img className='rounded-t-2xl' src={jwel}/>
-                  </div>    
-                  <div id='jwel' className='text-white dark:text-black text-sm text-left '></div>
-                  <ul className='flex justify-evenly bg-black text-white dark:bg-white dark:text-black rounded-b-2xl mt-2 '>
+                  <div  className='dark:text-white  text-left text-xl'>JEWELLERY SITE LANDING PAGE</div>
+                  <div id='jwel' className='text-white  text-left text-xl'></div>
+                  <ul className='flex justify-evenly dark:bg-black dark:text-white border-[1px] dark:border-white border-black rounded-xl mt-2 '>
                     <li className='text-base  m-1 hover:text-emerald-700'><a href="https://github.com/yash700701/jewellery.LandingPage" target="_blank">Github</a></li>
                     <li className='text-base  m-1 hover:text-emerald-700'><a href="https://vermillion-marigold-8d76ea.netlify.app/" target="_blank" >Run</a></li>
                     <li className='text-base  m-1 hover:text-emerald-700'><button onClick={addComponentToJwel} >About</button></li>
@@ -184,6 +168,7 @@ function SmallProj() {
               </div> 
         </motion.div>
      </div>
+    </div>
   )
 }
 

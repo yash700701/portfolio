@@ -5,7 +5,6 @@ import c from './images/icons/C.png'
 import cpp from './images/icons/C++.png'
 import css3 from './images/icons/CSS3.png'
 import figma from './images/icons/Figma.png'
-import firebase from './images/icons/Firebase.png'
 import git from './images/icons/Git.png'
 import github from './images/icons/GitHub.png'
 import html5 from './images/icons/HTML5.png'
@@ -17,6 +16,71 @@ import react from './images/icons/React.png'
 import tailwind from './images/icons/Tailwind.png'
 import appwrite from './images/icons/appwrite.png'
 import redux from './images/icons/Redux.png'
+import { div } from 'framer-motion/client'
+
+const skills = [
+  {
+    skill: "HTML",
+    img: html5
+  },
+  {
+    skill: "C++",
+    img: cpp
+  },
+  {
+    skill: "CSS",
+    img: css3
+  },
+  {
+    skill: "Figma",
+    img: figma
+  },
+  {
+    skill: "Git",
+    img: git
+  },
+  {
+    skill: "Github",
+    img: github
+  },
+  {
+    skill: "C language",
+    img: c
+  },
+  {
+    skill: "JavaScript",
+    img: js
+  },
+  {
+    skill: "MongoDB",
+    img: mongo
+  },
+  {
+    skill: "Node Js",
+    img: node
+  },
+  {
+    skill: "Postman API",
+    img: postman
+  },
+  {
+    skill: "React",
+    img: react
+  },
+  {
+    skill: "Tailwind",
+    img: tailwind
+  },
+  {
+    skill: "Appwrite",
+    img: appwrite
+  },
+  {
+    skill: "Redux Toolkit",
+    img: redux
+  },
+ 
+]
 
 
 const fadeIn = (direction, delay) => {
@@ -42,57 +106,19 @@ const fadeIn = (direction, delay) => {
 
 function Skills() {
   return (
-      <div id='icons' className='w-full pt-10 h-auto text-center dark:bg-black dark:text-white'>
-        <h1 className='py-8 text-3xl font-bold' style={{fontFamily: 'Doto'}} >Technical Skills.</h1>
-        <div className='grid sm:grid-cols-2'>
-            <div className=''>
-                <motion.div 
-                variants={fadeIn('up', 0.2)}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{once:false, amount:0.7}} 
-                className='flex justify-evenly'>  
-                  <img className='' src={html5} />
-                  <img className='' src={js} />
-                  <img className='' src={postman}  />
-                  <img className='' src={react}  />
-                </motion.div>
-                <motion.div 
-                variants={fadeIn('up', 0.2)}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{once:false, amount:0.7}} 
-                className='flex justify-evenly'>  
-                 
-                  <img className='' src={tailwind} />
-                  <img className='' src={c} alt="" srcset="" />
-                  <img src={cpp}/>
-                </motion.div>
+     <div className='px-2 py-4 dark:bg-black'>
+       <div className='w-full border-[1px] rounded-xl dark:border-white border-black py-5 h-auto text-center dark:bg-black dark:text-white'>
+        <h1 className=' text-3xl font-bold dark:text-zinc-300' style={{fontFamily: 'Doto'}} >Technical Skills.</h1>
+      <div className='grid grid-cols-3  sm:grid-cols-8 gap-2 p-5'>
+      {skills.map((skill)=>(
+            <div className='rounded-lg border-[1px] dark:border-white border-black flex' key={skill.skill}>
+                {/* <img src={skill.img} className='mx-auto bg-black' alt="" /> */}
+                <h1 className='mx-auto text-sm p-1 text-'>{skill.skill}</h1>
             </div>
-            <div className=''>
-                <motion.div
-                variants={fadeIn('up', 0.2)}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{once:false, amount:0.7}} 
-                className='flex justify-evenly'>  
-                  <img src={figma}/>
-                  <img src={git}/>
-                  <img src={css3}/>
-                  <img src={github}/>
-                </motion.div>
-                <motion.div
-                variants={fadeIn('up', 0.2)}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{once:false, amount:0.7}} 
-                className='flex justify-evenly'>  
-                  <img src={redux}/>
-                  <img src={appwrite}/>
-                </motion.div>
-            </div>
-        </div>
+        ))}
       </div>
+      </div>
+     </div>
   )
 }
 

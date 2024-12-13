@@ -5,13 +5,12 @@ import React from 'react'
 
 // lalyouts..
 import MainLayout from '../MainLayout.jsx'
-import QualificationLayout from './QualificationLayout.jsx'
+
 
 // components..
 import SmallProj from './SmallProj.jsx'
 import Deployed from './Deployed.jsx'
-import Educational from './Educational.jsx'
-import WorkExp from './WorkExp.jsx'
+
 
 
 const Router = createBrowserRouter([
@@ -29,19 +28,6 @@ const Router = createBrowserRouter([
       },
     ]
   },
-  {
-    path: 'qualification',
-    element: <QualificationLayout/>,
-    children: [
-      {
-        path: "educational",
-        element: <Educational/>
-      },{
-        path: "workExperience",
-        element: <WorkExp/>
-      }
-    ]
-  }
 ])
 
 import { ThemeProvider } from './UserContext.js'

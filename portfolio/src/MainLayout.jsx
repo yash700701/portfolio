@@ -6,7 +6,7 @@ import Headder from './components/Headder.jsx'
 import Skills from './components/Skills.jsx'
 import MyWork from './components/MyWork.jsx'
 import Footer from './components/Footer.jsx'
-import Count from './components/Count.jsx'
+import Swipe from './components/Swipe.jsx'
 
 function MainLayout() {
 
@@ -17,7 +17,7 @@ function MainLayout() {
     <Skills/>
     <MyWork/>
        <Outlet/>
-    <Count/>   
+    <Swipe/>  
     <Footer/>
     </>
   )
