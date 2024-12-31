@@ -1,5 +1,4 @@
 import React from 'react'
-import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 // import {fadeIn} from './Varients.js'
 import c from './images/icons/C.png'
@@ -15,10 +14,9 @@ import node from './images/icons/Node.js.png'
 import postman from './images/icons/Postman.png'
 import react from './images/icons/React.png'
 import tailwind from './images/icons/Tailwind.png'
-import appwrite from './images/icons/appwrite.png'
+import appwrite from './images/icons/Appwrite.png'
 import redux from './images/icons/Redux.png'
 import express from './images/icons/express.png'
-import { div } from 'framer-motion/client'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

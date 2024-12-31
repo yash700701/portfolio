@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import service from '../appwrite/Configuration'
 import { useState, useEffect } from 'react'
 import {motion} from 'framer-motion'
 import {useTypewriter , curser} from 'react-simple-typewriter'

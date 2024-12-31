@@ -1,6 +1,5 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import blog from './images/projects/blog2.png'
 
 
 function Deployed() {
