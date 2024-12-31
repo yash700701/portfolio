@@ -64,7 +64,7 @@ function Swipe() {
             <div className='mt-5 mx-8 py-2 dark:bg-black bg-white dark:border-[2px] border-[3px] dark:border-white border-black rounded-xl'>
                 <h1 className='py-3'>Internship</h1>
                 <p>Frontend Developer @ <a className='text-sky-700' href="https://www.linkedin.com/company/byteedu/posts/?feedView=all">ByteEdu</a></p>
-                <p>Nov 2023 - present</p>
+                <p>Nov 2024 - present</p>
             </div>
             <h1 className='absolute bottom-2 pl-3 text-7xl'><span className='text-sky-700'>.</span>.</h1>
         </div>
