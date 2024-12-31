@@ -1,9 +1,5 @@
 import React from 'react'
 import {motion} from 'framer-motion'
-import dice from './images/projects/Frame 1 - copy.png'
-import todo from './images/projects/todo - copy.png'
-import lab from './images/projects/labb - copy.png'
-import jwel from './images/projects/jwel - copy.png'
 
 
 function SmallProj() {
