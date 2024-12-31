@@ -6,6 +6,28 @@ import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 
 function Headder() {
+
+  useEffect(() => {
+    // Detect large screens using media query
+    const mediaQuery = window.matchMedia("(min-width: 1200px)");
+
+    const applyZoom = () => {
+      if (mediaQuery.matches) {
+        // Apply zoom-out for large screens
+        document.body.style.zoom = "135%";
+      } else {
+        // Reset zoom for smaller screens
+        document.body.style.zoom = "100%";
+      }
+    };
+
+    // Apply zoom initially and on screen resize
+    applyZoom();
+    mediaQuery.addEventListener("change", applyZoom);
+
+    // Cleanup the event listener
+    return () => mediaQuery.removeEventListener("change", applyZoom);
+  }, []);
  
   //darkModeToggler
   const {themeMode, darkTheme, lightTheme} = useTheme()
@@ -24,10 +46,10 @@ function Headder() {
 
   return (
   
-   <div id='headerContainer' className='flex px-2 pt-3 dark:bg-black justify-center bg-white '>
+   <div id='headerContainer' className='flex px-2  pt-3 dark:bg-black justify-center bg-white '>
       <div 
-      className='w-[100%] h-16 z-50 border-[1px] dark:border-white border-black rounded-xl flex justify-between '>
-        <h1 className='px-5 py-5  font-extrabold text-[indianred] font-[doto] text-base sm:text-xl'>
+      className='w-[100%] h-16 z-50 dark:border-[2px] border-[3px] dark:border-white  border-black rounded-xl flex justify-between dark:bg-black bg-[#fffcf3]'>
+        <h1 className='px-5 py-5  font-extrabold text-sky-600 font-[doto] text-base sm:text-xl'>
           portfolio.yash
         </h1>
         <ul className='flex'>

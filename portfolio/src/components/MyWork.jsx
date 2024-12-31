@@ -1,14 +1,27 @@
 import { div } from 'framer-motion/client'
 import React from 'react'
+import { useEffect, useState } from 'react';
 import {Link, NavLink} from 'react-router-dom'
 // import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
 
 function  MyWork() {
+    const [colorIndex, setColorIndex] = useState(0);
+
+    const colors = ["darkgrey", "white"]; // Array of colors
+  
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setColorIndex((prevIndex) => (prevIndex + 1) % colors.length); // Cycle through colors
+      }, 1); // Change color every second
+  
+      return () => clearInterval(interval); // Cleanup interval on component unmount
+    }, []);
+  
   return (
     <div className='px-2  dark:bg-black'>
-        <div className='w-full rounded-xl border-[1px] dark:border-white border-black h-auto flex flex-col items-center text-center dark:bg-black'>
-        <h1 className='my-5 text-3xl font-bold dark:text-white'  style={{fontFamily: 'doto'}}>Find My Work.</h1>
-        <div className='h-auto my-5 rounded-full border-[1px] dark:border-white border-black '>
+        <div className='w-full rounded-xl  bg-[#fffcf3] dark:border-[2px] border-[3px] dark:border-white border-black h-auto flex flex-col items-center text-center dark:bg-black'>
+        <h1 className='my-5 text-3xl font-bold dark:text-white'  style={{fontFamily: 'doto', color: colors[colorIndex]}}>Find My Work.</h1>
+        <div className='h-auto my-5 dark:bg-black rounded-xl bg-white dark:border-[2px] border-[3px] dark:border-white border-black '>
         <ul className='flex justify-evenly items-center'>
             <li>
                 <NavLink 

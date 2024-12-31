@@ -13,7 +13,7 @@ function Deployed() {
     component.classList.add('component');
     component.innerHTML = `
       <div class="aboutdicetext">
-      ashg
+          I developed a full-stack blog website that allows users to create, read, update, and delete their posts. The platform also includes features like liking and commenting on posts, enabling users to engage and interact with content. To ensure secure access and personalized experiences, the website incorporates user authentication. The project leverages modern technologies, including React.js and Tailwind CSS for a responsive and sleek user interface, Appwrite for backend services like authentication and database management, Redux for efficient state management, TinyMCE Editor for rich text editing, and React Hook Forms for smooth form handling. This project reflects my focus on building user-centric applications with a seamless and engaging experience.
       <br>
       </div>
     `
@@ -39,7 +39,7 @@ function Deployed() {
     <div className='pt-4 px-2 dark:bg-black'>
     <div
  id='smallProjects'
- className='w-full border-[1px] dark:border-white border-black rounded-xl pt-5  h-auto text-center text-3xl flex justify-center dark:bg-black'>
+ className='w-full dark:border-[2px] bg-[#fffcf3] border-[3px] dark:border-white border-black rounded-xl pt-5  h-auto text-center text-3xl flex justify-center dark:bg-black'>
     <motion.div
     initial={{opacity:0, y:10}}
     animate={{opacity:1, y:0}}
@@ -49,9 +49,9 @@ function Deployed() {
     }}
     >
           <div  className='w-72  dark:bg-black m-8 drop-shadow-2xl rounded-2xl ' >
-              <div className='dark:text-white  text-left text-xl'>BLOG WEBSITE</div>
+              <div className='text-2xl text-emerald-600 font-bold  text-left '>BLOG WEBSITE</div>
               <div id='blog' className='text-white  text-left text-sm'></div>
-              <ul className='flex justify-evenly dark:bg-black dark:text-white border-[1px] dark:border-white border-black rounded-lg mt-2 '>
+              <ul className='flex justify-evenly bg-white dark:bg-black dark:text-white dark:border-[2px] border-[3px] dark:border-white border-black rounded-lg mt-2 '>
                 <li className='text-base  m-1 hover:text-emerald-700'><a href="https://github.com/yash700701/blogProject" target="_blank">Github</a></li>
                 <li className='text-base  m-1 hover:text-emerald-700'><a href="https://blog-project-git-main-yash700701s-projects.vercel.app/" target="_blank" >Run</a></li>
                 <li className='text-base  m-1 hover:text-emerald-700'><button onClick={addComponentToBlog} >About</button></li>

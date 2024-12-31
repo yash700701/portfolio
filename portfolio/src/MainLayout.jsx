@@ -7,6 +7,7 @@ import Skills from './components/Skills.jsx'
 import MyWork from './components/MyWork.jsx'
 import Footer from './components/Footer.jsx'
 import Swipe from './components/Swipe.jsx'
+import Mail from './components/Mail.jsx'
 
 function MainLayout() {
 
@@ -17,7 +18,8 @@ function MainLayout() {
     <Skills/>
     <MyWork/>
        <Outlet/>
-    <Swipe/>  
+    <Swipe/> 
+    <Mail/> 
     <Footer/>
     </>
   )
