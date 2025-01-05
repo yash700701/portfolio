@@ -12,6 +12,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import vid from './images/particle.mp4'
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -143,7 +144,7 @@ function Home() {
               duration:1,
             }}
             >
-            <p>
+            <p style={{fontFamily: "Special Elite"}}>
             Hi! 👋 I’m Yash Tiwari, a front-end developer from Noida.
             I create stunning, interactive websites using HTML, CSS, 
             JavaScript, and React. With expertise in responsive design 
