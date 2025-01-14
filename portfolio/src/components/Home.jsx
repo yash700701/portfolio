@@ -70,6 +70,8 @@ function Home() {
     // dots: true,
     infinite: true,
     speed: 500,
+    autoplay: true,
+    autoplaySpeed: 10000,
     slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
@@ -101,7 +103,7 @@ function Home() {
 
   return (
    
-   <div className=''>
+   <div className='dark:bg-zinc-900'>
      <motion.div id='homeContainer' className='dark:bg-zinc-900 pt-2'  
     initial={{opacity:0, y:10}}
     animate={{opacity:1, y:0}}
