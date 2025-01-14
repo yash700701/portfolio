@@ -30,8 +30,8 @@ function Footer() {
   return (
     <>
     
-    <footer className='py-4 px-2 w-full  justify-center dark:bg-black '>
-        <div className='h-auto p-1 dark:bg-black bg-[#fffcf3] grid text-xs grid-cols-2 dark:text-white rounded-xl dark:border-white border-black dark:border-[2px] border-[3px]'>
+    <footer className='pt-2 pb-4 px-2 w-full  justify-center dark:bg-zinc-900 '>
+        <div className='h-auto p-1 dark:bg-black bg-[#fffcf3] grid text-xs grid-cols-2 dark:text-white rounded-xl dark:shadow-white shadow-black shadow-sm'>
             <p className='p-2'>made with ♡ by yash</p>
             <p className='p-2'>views:- <span className='text-cyan-700'>{v}</span></p>
         </div>

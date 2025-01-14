@@ -58,10 +58,10 @@ function Swipe() {
   return (
    
         <Slider {...settings} className='dark:text-gray-50'>
-        <div className='dark:bg-black pt-4 px-2'>
-        <div className='dark:text-white dark:bg-black bg-[#fffcf3] dark:border-[2px] border-[3px] text-center h-96 dark:border-white border-black rounded-xl'>
+        <div className='dark:bg-zinc-900 py-2 px-2'>
+        <div className='dark:text-white dark:bg-black bg-[#fffcf3]  text-center h-96 dark:shadow-white shadow-black shadow-sm rounded-xl'>
             <h1 className=' text-3xl font-bold pt-5 dark:text-zinc-300 text-black' style={{fontFamily: 'Doto', color: colors[colorIndex]}} >EXPERIENCE</h1>
-            <div className='mt-5 mx-8 py-2 dark:bg-black bg-white dark:border-[2px] border-[3px] dark:border-white border-black rounded-xl'>
+            <div className='mt-5 mx-8 py-2 dark:bg-black bg-white dark:shadow-white shadow-black shadow-sm rounded-xl'>
                 <h1 className='py-3'>Internship</h1>
                 <p>Frontend Developer @ <a className='text-sky-700' href="https://www.linkedin.com/company/byteedu/posts/?feedView=all">ByteEdu</a></p>
                 <p>Nov 2024 - present</p>
@@ -69,10 +69,10 @@ function Swipe() {
             <h1 className='absolute bottom-2 pl-3 text-7xl'><span className='text-sky-700'>.</span>.</h1>
         </div>
         </div>
-        <div className='dark:bg-black pt-4 px-2'>
-        <div className='dark:text-white dark:bg-black bg-[#fffcf3] text-center dark:border-[2px] border-[3px]  h-96 dark:border-white border-black rounded-xl'>
+        <div className='dark:bg-zinc-900  py-2 px-2'>
+        <div className='dark:text-white dark:bg-black bg-[#fffcf3] text-center  h-96 dark:shadow-white shadow-black shadow-sm rounded-xl'>
         <h1 className=' text-3xl font-bold pt-5 dark:text-zinc-300' style={{fontFamily: 'Doto', color: colors[colorIndex]}} >QUALIFICATION</h1>
-            <div className='mt-5 mx-8 py-2 dark:bg-black bg-white dark:border-[2px] border-[3px] dark:border-white border-black rounded-xl'>
+            <div className='mt-5 mx-8 py-2 dark:bg-black bg-white dark:shadow-white shadow-black shadow-sm rounded-xl'>
                 <h1 className='py-3'>Bachelor of Technology in <span className='text-sky-700'>Computer Science</span></h1>
                 <p>JSS Academy of Technical education</p>
                 <p>2023 - 2027</p>

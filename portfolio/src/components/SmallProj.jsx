@@ -125,10 +125,10 @@ function SmallProj() {
   }
   
   return (
-    <div className='pt-4 px-2 dark:bg-black'>
+    <div className='pt-2 pb-2 px-2 dark:bg-zinc-900'>
         <div
      id='smallProjects'
-     className='w-full dark:border-[2px] border-[3px] bg-[#fffcf3] dark:border-white border-black rounded-xl pt-5  h-auto text-center text-3xl flex justify-center dark:bg-black'>
+     className='w-full  bg-[#fffcf3] dark:shadow-white shadow-black shadow-sm rounded-xl pt-5  h-auto text-center text-3xl flex justify-center dark:bg-black'>
         <motion.div
         initial={{opacity:0, y:10}}
         animate={{opacity:1, y:0}}
@@ -141,7 +141,7 @@ function SmallProj() {
               <div  className='w-72  dark:bg-black m-8 drop-shadow-2xl rounded-2xl ' >
                   <div  className='text-left text-2xl text-emerald-600 font-bold '>JEWELLERY SITE LANDING PAGE</div>
                   <div id='jwel' className='text-white  text-left text-xl'></div>
-                  <ul className='flex justify-evenly bg-white dark:bg-black dark:text-white dark:border-[2px] border-[3px] dark:border-white border-black rounded-xl mt-2 '>
+                  <ul className='flex justify-evenly bg-white dark:bg-black dark:text-white dark:shadow-white shadow-black shadow-sm rounded-xl mt-2 '>
                     <li className='text-base  m-1 hover:text-sky-700'><a href="https://github.com/yash700701/jewellery.LandingPage" target="_blank">Github</a></li>
                     <li className='text-base  m-1 hover:text-sky-700'><a href="https://jewellery-landing-page.vercel.app/" target="_blank" >Run</a></li>
                     <li className='text-base  m-1 hover:text-sky-700'><button onClick={addComponentToJwel} >About</button></li>
@@ -150,7 +150,7 @@ function SmallProj() {
               <div  className='w-72  dark:bg-black m-8 drop-shadow-2xl rounded-2xl ' >
                   <div className='text-2xl text-emerald-600 font-bold text-left '>DICE GAME</div>
                   <div id='dice' className='text-white  text-left text-xl'></div>
-                  <ul className='flex justify-evenly bg-white dark:bg-black dark:text-white dark:border-[2px] border-[3px] dark:border-white border-black rounded-xl mt-2 '>
+                  <ul className='flex justify-evenly bg-white dark:bg-black dark:text-white dark:shadow-white shadow-black shadow-sm rounded-xl mt-2 '>
                     <li className='text-base  m-1 hover:text-sky-700'><a href="https://github.com/yash700701/diceGame" target="_blank">Github</a></li>
                     <li className='text-base  m-1 hover:text-sky-700'><a href="https://dicegamebyyash.netlify.app/" target="_blank" >Play</a></li>
                     <li className='text-base  m-1 hover:text-sky-700'><button onClick={addComponentToDice} >About</button></li>
@@ -159,7 +159,7 @@ function SmallProj() {
               <div className='w-72 dark:bg-black m-8 drop-shadow-2xl rounded-2xl '>
                   <div  className='text-left text-2xl text-emerald-600 font-bold '>TODO LIST</div>
                   <div id='todo' className='text-white  text-left text-xl'></div>
-                  <ul className='flex justify-evenly bg-white dark:bg-black dark:text-white dark:border-[2px] border-[3px] dark:border-white border-black rounded-xl mt-2'>
+                  <ul className='flex justify-evenly bg-white dark:bg-black dark:text-white dark:shadow-white shadow-black shadow-sm rounded-xl mt-2'>
                     <li className='text-base m-1 hover:text-sky-700'><a href="https://github.com/yash700701/todo" target="_blank">Github</a></li>
                     <li className='text-base m-1 hover:text-sky-700'><a href="https://monumental-naiad-d18170.netlify.app/" target="_blank" >Run</a></li>
                     <li className='text-base m-1 hover:text-sky-700'><button onClick={addComponentToTodo} >About</button></li>
