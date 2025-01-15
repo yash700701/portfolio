@@ -117,9 +117,10 @@ function Home() {
       duration:1,
     }} >
       <div className='grid sm:grid-cols-10 grid-cols-1'>
-        <Slider {...settings}>
+          <div className='sm:col-span-5'>
+          <Slider {...settings}>
           <div className='p-2'>
-          <div className='h-60 p-1 sm:col-span-5 dark:bg-black bg-[#fffcf3] flex  rounded-xl bg-gradient-to-r dark:shadow-white shadow-black shadow-sm '>
+          <div className='h-60 p-1  dark:bg-black bg-[#fffcf3] flex  rounded-xl bg-gradient-to-r dark:shadow-white shadow-black shadow-sm '>
               <div className='my-20 ml-5'>
                   <h1 className='text-3xl py-1 font-bold dark:text-zinc-400'  >Hi There,</h1>
                   <h1 className='text-3xl font-bold dark:text-zinc-400'>I'm <span className='dark:text-neutral-50  text-5xl'>Yash Tiwari</span></h1>
@@ -128,31 +129,32 @@ function Home() {
           </div>
           </div>
          <div className='p-2'>
-            <div className='h-60 sm:col-span-5 dark:bg-black bg-[#fffcf3] flex  rounded-xl bg-gradient-to-r dark:shadow-white shadow-black shadow-sm '>
-              <img src={p1} className='h-60 w-96 object-cover rounded-xl' alt="" />
+            <div className='h-60 dark:bg-black bg-[#fffcf3] flex  rounded-xl bg-gradient-to-r dark:shadow-white shadow-black shadow-sm '>
+              <img src={p1} className='h-60 object-cover  rounded-xl' alt="" />
             </div>
          </div>
          <div className='p-2'>
-            <div className='h-60 sm:col-span-5 dark:bg-black bg-[#fffcf3] flex  rounded-xl bg-gradient-to-r dark:shadow-white shadow-black shadow-sm '>
-              <img src={p2} className='h-60 w-96 object-cover rounded-xl' alt="" />
+            <div className='h-60  dark:bg-black bg-[#fffcf3] flex  rounded-xl bg-gradient-to-r dark:shadow-white shadow-black shadow-sm '>
+              <img src={p2} className='h-60  object-cover rounded-xl' alt="" />
+            </div>
+         </div>
+         <div className='p-2 '>
+            <div className='h-60  dark:bg-black bg-[#fffcf3] flex  rounded-xl bg-gradient-to-r dark:shadow-white shadow-black shadow-sm '>
+              <img src={p3} className='h-60 object-cover rounded-xl' alt="" />
             </div>
          </div>
          <div className='p-2'>
-            <div className='h-60 sm:col-span-5 dark:bg-black bg-[#fffcf3] flex  rounded-xl bg-gradient-to-r dark:shadow-white shadow-black shadow-sm '>
-              <img src={p3} className='h-60 w-96 object-cover rounded-xl' alt="" />
+            <div className='h-60 dark:bg-black bg-[#fffcf3] flex  rounded-xl bg-gradient-to-r dark:shadow-white shadow-black shadow-sm '>
+              <img src={p4} className='h-60 object-cover rounded-xl' alt="" />
             </div>
          </div>
          <div className='p-2'>
-            <div className='h-60 sm:col-span-5 dark:bg-black bg-[#fffcf3] flex  rounded-xl bg-gradient-to-r dark:shadow-white shadow-black shadow-sm '>
-              <img src={p4} className='h-60 w-96 object-cover rounded-xl' alt="" />
-            </div>
-         </div>
-         <div className='p-2'>
-            <div className='h-60 sm:col-span-5 dark:bg-black bg-[#fffcf3] flex  rounded-xl bg-gradient-to-r dark:shadow-white shadow-black shadow-sm '>
-              <img src={p5} className='h-60 w-96 object-cover rounded-xl' alt="" />
+            <div className='h-60 w-full dark:bg-black bg-[#fffcf3] flex  rounded-xl bg-gradient-to-r dark:shadow-white shadow-black shadow-sm '>
+              <img src={p5} className='h-60  object-cover rounded-xl' alt="" />
             </div>
          </div>
         </Slider>
+          </div>
           <div className='sm:col-span-5 flex '>
               
               <div className='h-60 max-w-[50vh] mx-2 my-2  rounded-xl ' style={{backgroundColor:"rgb(217,217,217)"}}>
