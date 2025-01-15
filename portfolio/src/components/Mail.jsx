@@ -82,7 +82,7 @@ function Mail() {
               onChange={handleChange}
               required
               placeholder="Your Name"
-              className="mt-1 px-4 py-2 dark:bg-black dark:text-white w-3/4 dark:shadow-white shadow-black shadow-sm rounded-lg"
+              className="mt-1 px-4 py-2 dark:bg-black dark:text-zinc-500 w-3/4 dark:shadow-white shadow-black shadow-sm rounded-lg"
             />
           </div>
 
@@ -96,7 +96,7 @@ function Mail() {
               onChange={handleChange}
               required
               placeholder="Your Email"
-              className=" px-4 py-2 dark:bg-black dark:text-white w-3/4 dark:shadow-white shadow-black shadow-sm rounded-lg"
+              className=" px-4 py-2 dark:bg-black dark:text-zinc-500 w-3/4 dark:shadow-white shadow-black shadow-sm rounded-lg"
             />
           </div>
 
@@ -110,7 +110,7 @@ function Mail() {
               required
               rows="4"
               placeholder="Your Message"
-              className=" px-4 py-2 dark:bg-black dark:text-white w-3/4 dark:shadow-white shadow-black shadow-sm rounded-lg"
+              className=" px-4 py-2 dark:bg-black dark:text-zinc-500 w-3/4 dark:shadow-white shadow-black shadow-sm rounded-lg"
             ></textarea>
           </div>
 
@@ -118,7 +118,7 @@ function Mail() {
           <button
             type="submit"
             disabled={isLoading}
-            className=" px-4 py-2 dark:bg-black bg-white dark:text-white w-3/4 dark:shadow-white shadow-black shadow-sm rounded-lg"
+            className=" px-4 py-2 dark:bg-black bg-white dark:text-zinc-500 w-3/4 dark:shadow-white shadow-black shadow-sm rounded-lg"
           >
             {isLoading ? "Sending..." : "Send"}
           </button>

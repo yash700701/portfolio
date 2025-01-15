@@ -9,10 +9,11 @@ import p3 from './images/p3.jpg'
 import p4 from './images/p4.jpg'
 import p5 from './images/p5.jpg'
 import eye from './images/h1.jpg'
-import insta from './images/icons/insta.png'
-import linkedin from './images/icons/linkedin.png'
-import github from './images/icons/github2.png'
-import mail from './images/icons/mail.png'
+import leetcode from './images/icons/leetcode.png'
+import insta from './images/icons/instagram.png'
+import linkedin from './images/icons/linkedin (2).png'
+import github from './images/icons/github (1).png'
+import mail from './images/icons/mail (2).png'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import Slider from "react-slick";
@@ -46,6 +47,11 @@ const links = [
     social: "linkedin",
     link: "https://www.linkedin.com/in/yash-tiwari-01abab285/",
     img: linkedin,
+  },
+  {
+    social: "leetcode",
+    link: "https://leetcode.com/u/yash_tiwari700/",
+    img: leetcode,
   },
   {
     social: "github",
@@ -162,7 +168,7 @@ function Home() {
       
               <div className='h-60 mx-2 my-2 dark:bg-black bg-[#fffcf3] rounded-xl dark:shadow-white shadow-black shadow-sm w-4/5'>
                   <h1 className='dark:text-zinc-300 text-xl p-4 font-bold ' style={{fontFamily:'Doto'}}>Some Of My <span style={{fontFamily:"Playfair Display"}} className='text-sky-700'>Interesting Stats</span></h1>
-                  <p className='dark:text-white  text-base sm:text-xl p-4 font-bold'>
+                  <p className='dark:text-zinc-500  text-base sm:text-xl p-4 font-bold'>
                       {paras[currentIndex]}
                   </p>
               </div>
@@ -174,7 +180,7 @@ function Home() {
           <div className='  rounded-xl dark:bg-black bg-[#fffcf3] dark:shadow-white shadow-black shadow-sm' >
             <p className='text-left pl-5 pt-4 text-lg dark:text-zinc-300 font-bold'  style={{fontFamily: 'Doto'}}>About Me.</p>
             <motion.p
-            className='text-sm dark:text-white p-5 '
+            className='text-sm dark:text-zinc-500 p-5 '
             initial={{opacity:0, y:5}}
             animate={{opacity:1, y:0}}
             transition={{
@@ -182,11 +188,8 @@ function Home() {
             }}
             >
             <p style={{fontFamily: "Special Elite"}}>
-            Hi! 👋 I’m Yash Tiwari, a front-end developer from Noida.
-            I create stunning, interactive websites using HTML, CSS, 
-            JavaScript, and React. With expertise in responsive design 
-            and user-friendly interfaces, I transform ideas into
-            pixel-perfect solutions.
+            Hi! 👋 I’m Yash Tiwari, a MERN developer from Noida.
+            I specialize in creating full-stack web applications using MongoDB, Express.js, React, and Node.js. With expertise in building responsive designs and user-friendly interfaces, I transform ideas into scalable, high-performance solutions.
             Let’s connect!
             </p>
             <div className='flex'>
@@ -202,7 +205,7 @@ function Home() {
           <div className=' rounded-xl dark:bg-black bg-[#fffcf3] dark:shadow-white shadow-black shadow-sm' >
             <p className='text-left pl-5 pt-4 text-lg dark:text-zinc-300 font-bold'  style={{fontFamily: 'Doto'}}>About Me.</p>
             <motion.p
-            className='text-sm dark:text-white p-5 '
+            className='text-sm dark:text-zinc-500 p-5 '
             initial={{opacity:0, y:5}}
             animate={{opacity:1, y:0}}
             transition={{
@@ -210,11 +213,8 @@ function Home() {
             }}
             >
             <p style={{fontFamily: "Special Elite"}}>
-            Hi! 👋 I’m Yash Tiwari, a front-end developer from Noida.
-            I create stunning, interactive websites using HTML, CSS, 
-            JavaScript, and React. With expertise in responsive design 
-            and user-friendly interfaces, I transform ideas into
-            pixel-perfect solutions.
+            Hi! 👋 I’m Yash Tiwari, a MERN developer from Noida.
+            I specialize in creating full-stack web applications using MongoDB, Express.js, React, and Node.js. With expertise in building responsive designs and user-friendly interfaces, I transform ideas into scalable, high-performance solutions.
             Let’s connect!
             </p>
             <div className='flex'>

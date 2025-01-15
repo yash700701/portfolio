@@ -27,7 +27,7 @@ function  MyWork() {
                 to="/smallprojects"
                 className={({isActive})=>
                     `
-                    ${isActive ? "text-sky-700" : "dark:text-white" }
+                    ${isActive ? "text-sky-700" : "dark:text-zinc-500" }
                     transition-all
                     px-4
                     py-2
@@ -54,7 +54,7 @@ function  MyWork() {
                 to="/largeprojects"
                 className={({isActive})=>
                     `
-                    ${isActive ? "text-sky-700" : "dark:text-white"  }
+                    ${isActive ? "text-sky-700" : "dark:text-zinc-500"  }
                     rounded-full
                     transition-all
                     px-4

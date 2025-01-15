@@ -16,7 +16,8 @@ import react from './images/icons/React.png'
 import tailwind from './images/icons/Tailwind.png'
 import appwrite from './images/icons/Appwrite.png'
 import redux from './images/icons/Redux.png'
-import express from './images/icons/express.png'
+import express from './images/icons/express-svgrepo-com.png'
+import next from './images/icons/nextjs-icon-svgrepo-com (1).png'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -45,16 +46,44 @@ function SamplePrevArrow(props) {
 
 const skills = [
   {
+    skill: "MongoDB",
+    img: mongo
+  },
+  {
+    skill: "Express",
+    img: express
+  },
+  {
+    skill: "React",
+    img: react
+  },
+  {
+    skill: "Node Js",
+    img: node
+  },
+  {
+    skill: "NextJs",
+    img: next
+  },
+  {
+    skill: "JavaScript",
+    img: js
+  },
+  {
+    skill: "CSS",
+    img: css3
+  },
+  {
+    skill: "Tailwind",
+    img: tailwind
+  },
+  {
     skill: "HTML",
     img: html5
   },
   {
     skill: "C++",
     img: cpp
-  },
-  {
-    skill: "CSS",
-    img: css3
   },
   {
     skill: "Figma",
@@ -73,28 +102,8 @@ const skills = [
     img: c
   },
   {
-    skill: "JavaScript",
-    img: js
-  },
-  {
-    skill: "MongoDB",
-    img: mongo
-  },
-  {
-    skill: "Node Js",
-    img: node
-  },
-  {
     skill: "Postman API",
     img: postman
-  },
-  {
-    skill: "React",
-    img: react
-  },
-  {
-    skill: "Tailwind",
-    img: tailwind
   },
   {
     skill: "Appwrite",
@@ -104,11 +113,6 @@ const skills = [
     skill: "Redux Toolkit",
     img: redux
   },
-  {
-    skill: "Express",
-    img: express
-  },
- 
 ]
 
 

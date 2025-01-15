@@ -49,11 +49,11 @@ function Deployed() {
     >
           <div  className='w-72  dark:bg-black m-8 drop-shadow-2xl rounded-2xl ' >
               <div className='text-2xl text-emerald-600 font-bold  text-left '>BLOG WEBSITE</div>
-              <div id='blog' className='text-white  text-left text-sm'></div>
+              <div id='blog' className='text-left text-sm'></div>
               <ul className='flex justify-evenly bg-white dark:bg-black dark:text-white dark:shadow-white shadow-black shadow-sm rounded-lg mt-2 '>
-                <li className='text-base  m-1 hover:text-emerald-700'><a href="https://github.com/yash700701/blogProject" target="_blank">Github</a></li>
-                <li className='text-base  m-1 hover:text-emerald-700'><a href="https://blog-project-git-main-yash700701s-projects.vercel.app/" target="_blank" >Run</a></li>
-                <li className='text-base  m-1 hover:text-emerald-700'><button onClick={addComponentToBlog} >About</button></li>
+                <li className='text-base text-zinc-500 m-1 hover:text-emerald-700'><a href="https://github.com/yash700701/blogProject" target="_blank">Github</a></li>
+                <li className='text-base text-zinc-500  m-1 hover:text-emerald-700'><a href="https://blog-project-git-main-yash700701s-projects.vercel.app/" target="_blank" >Run</a></li>
+                <li className='text-base text-zinc-500  m-1 hover:text-emerald-700'><button onClick={addComponentToBlog} >About</button></li>
               </ul>  
           </div>
          
