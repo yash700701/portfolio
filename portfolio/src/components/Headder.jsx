@@ -83,7 +83,7 @@ function Headder() {
   
    <div id='headerContainer' className='flex px-2  pt-3 dark:bg-zinc-900 justify-center bg-white '>
       <div 
-      className='w-[100%] h-16 z-50 dark:shadow-white shadow-black shadow-sm rounded-xl flex justify-between dark:bg-black bg-[#fffcf3]'>
+      className='w-[100%] h-16 z-50 dark:shadow-white border-[2px] border-sky-700 shadow-black shadow-sm rounded-xl flex justify-between dark:bg-black bg-[#fffcf3]'>
         <h1 className='px-5 py-5  font-extrabold text-sky-600 font-[doto] text-base sm:text-xl'>
           portfolio.yash
         </h1>

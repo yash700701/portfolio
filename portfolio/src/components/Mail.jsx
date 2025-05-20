@@ -69,7 +69,7 @@ function Mail() {
   return (
    <>
    <div className='dark:bg-zinc-900 text-center py-2 px-2'>
-      <div className='py-4  rounded-xl dark:shadow-white shadow-black shadow-sm dark:bg-black bg-[#fffcf3]'>
+      <div className='py-4  rounded-xl border-[2px] border-sky-700 dark:shadow-white shadow-black shadow-sm dark:bg-black bg-[#fffcf3]'>
         <h1 className='my-5 text-3xl font-bold dark:text-white'  style={{fontFamily: 'doto', color: colors[colorIndex]}}>Send Message.</h1>
         <form className="space-y-4" onSubmit={handleSubmit}>
           {/* Name Field */}
@@ -82,7 +82,7 @@ function Mail() {
               onChange={handleChange}
               required
               placeholder="Your Name"
-              className="mt-1 px-4 py-2 dark:bg-black dark:text-zinc-500 w-3/4 dark:shadow-white shadow-black shadow-sm rounded-lg"
+              className="mt-1 px-4 py-2 border-[2px] border-sky-700 dark:bg-black dark:text-zinc-500 w-3/4 dark:shadow-white shadow-black shadow-sm rounded-lg"
             />
           </div>
 
@@ -96,7 +96,7 @@ function Mail() {
               onChange={handleChange}
               required
               placeholder="Your Email"
-              className=" px-4 py-2 dark:bg-black dark:text-zinc-500 w-3/4 dark:shadow-white shadow-black shadow-sm rounded-lg"
+              className=" px-4 py-2 dark:bg-black border-[2px] border-sky-700 dark:text-zinc-500 w-3/4 dark:shadow-white shadow-black shadow-sm rounded-lg"
             />
           </div>
 
@@ -110,7 +110,7 @@ function Mail() {
               required
               rows="4"
               placeholder="Your Message"
-              className=" px-4 py-2 dark:bg-black dark:text-zinc-500 w-3/4 dark:shadow-white shadow-black shadow-sm rounded-lg"
+              className=" px-4 py-2 dark:bg-black border-[2px] border-sky-700 dark:text-zinc-500 w-3/4 dark:shadow-white shadow-black shadow-sm rounded-lg"
             ></textarea>
           </div>
 
@@ -118,7 +118,7 @@ function Mail() {
           <button
             type="submit"
             disabled={isLoading}
-            className=" px-4 py-2 dark:bg-black bg-white dark:text-zinc-500 w-3/4 dark:shadow-white shadow-black shadow-sm rounded-lg"
+            className=" px-4 py-2 dark:bg-black border-[2px] border-sky-700 bg-white dark:text-zinc-500 w-3/4 dark:shadow-white shadow-black shadow-sm rounded-lg"
           >
             {isLoading ? "Sending..." : "Send"}
           </button>

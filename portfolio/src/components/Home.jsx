@@ -3,11 +3,6 @@ import { useState, useEffect } from 'react'
 import {motion} from 'framer-motion'
 import {useTypewriter , curser} from 'react-simple-typewriter'
 import yashh from './images/yashh.jpg'
-import p1 from './images/p1.jpg'
-import p2 from './images/p2.jpg'
-import p3 from './images/p3.jpg'
-import p4 from './images/p4.jpg'
-import p5 from './images/p5.jpg'
 import eye from './images/h1.jpg'
 import leetcode from './images/icons/leetcode.png'
 import insta from './images/icons/instagram.png'
@@ -90,8 +85,9 @@ function Home() {
   })
 
   const paras = [
-    "Solved 100+ Questions on Leetcode",
-    "100+ Score on Geeks For Geeks",
+    "Solved 160+ Questions on Leetcode 🔥 ",
+    "100+ Score on Geeks For Geeks 😎",
+    "Created 10+ projects in Web Development 🧑🏻‍💻"
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -120,7 +116,7 @@ function Home() {
           <div className='sm:col-span-5'>
           
           <div className='p-2'>
-          <div className='h-60 p-1  dark:bg-black bg-[#fffcf3] flex  rounded-xl bg-gradient-to-r dark:shadow-white shadow-black shadow-sm '>
+          <div className='h-60 p-1  dark:bg-black bg-[#fffcf3] flex border-[2px] border-sky-700 rounded-xl bg-gradient-to-r dark:shadow-white shadow-black shadow-sm '>
               <div className='my-20 ml-5'>
                   <h1 className='text-3xl py-1 font-bold dark:text-zinc-400'  >Hi There,</h1>
                   <h1 className='text-3xl font-bold dark:text-zinc-400'>I'm <span className='dark:text-neutral-50  text-5xl'>Yash Tiwari</span></h1>
@@ -136,16 +132,16 @@ function Home() {
                   <LazyLoadImage
                   src={yashh}
                   alt="img"
-                  className='h-60 rounded-xl w-60 object-cover bg-black dark:shadow-white shadow-black shadow-sm'
+                  className='h-60 rounded-xl border-[2px] border-sky-700 w-60 object-cover bg-black dark:shadow-white shadow-black shadow-sm'
                   effect="blur" // Adds a blur effect while loading
                   />
               </div>
               
 
       
-              <div className='h-60 mx-2 my-2 dark:bg-black bg-[#fffcf3] rounded-xl dark:shadow-white shadow-black shadow-sm w-4/5'>
+              <div className='h-60 mx-2 my-2 border-[2px] border-sky-700 dark:bg-black bg-[#fffcf3] rounded-xl dark:shadow-white shadow-black shadow-sm w-4/5'>
                   <h1 className='dark:text-zinc-300 text-xl p-4 font-bold ' style={{fontFamily:'Doto'}}>Some Of My <span style={{fontFamily:"Playfair Display"}} className='text-sky-700'>Interesting Stats</span></h1>
-                  <p className='dark:text-zinc-500  text-base sm:text-xl p-4 font-bold'>
+                  <p className='dark:text-zinc-200  text-base sm:text-xl p-4 font-bold'>
                       {paras[currentIndex]}
                   </p>
               </div>
@@ -154,10 +150,10 @@ function Home() {
       </div>
       
         <div className='px-2 py-2'>
-          <div className='  rounded-xl dark:bg-black bg-[#fffcf3] dark:shadow-white shadow-black shadow-sm' >
+          <div className='  rounded-xl border-[2px] border-sky-700 dark:bg-black bg-[#fffcf3] dark:shadow-white shadow-black shadow-sm' >
             <p className='text-left pl-5 pt-4 text-lg dark:text-zinc-300 font-bold'  style={{fontFamily: 'Doto'}}>About Me.</p>
             <motion.p
-            className='text-sm dark:text-zinc-500 p-5 '
+            className='text-sm dark:text-zinc-200 p-5 '
             initial={{opacity:0, y:5}}
             animate={{opacity:1, y:0}}
             transition={{
@@ -184,7 +180,7 @@ function Home() {
     </motion.div>
     <Slider {...settings}>
     <div className='py-2 px-2 dark:bg-zinc-900'>
-      <div className='text-white bg-[#fffcf3] dark:bg-black flex justify-end px-5 gap-4 rounded-xl h-16 dark:shadow-white shadow-black shadow-sm'>
+      <div className='text-white border-[2px] border-sky-700 bg-[#fffcf3] dark:bg-black flex justify-end px-5 gap-4 rounded-xl h-16 dark:shadow-white shadow-black shadow-sm'>
         {links.map((item)=>(
           <div key={item.social}>
            <a href={item.link}>
@@ -195,7 +191,7 @@ function Home() {
       </div>
     </div>
     <div className='py-2 px-2 dark:bg-zinc-900'>
-      <div className='text-white bg-[#fffcf3]  bg-gradient-to-r from-[#b80909] to-[#c22525] flex justify-end  gap-4 rounded-xl h-16 dark:shadow-white shadow-black shadow-sm'>
+      <div className='text-white  bg-[#fffcf3]  bg-gradient-to-r from-[#b80909] to-[#c22525] flex justify-end  gap-4 rounded-xl h-16 dark:shadow-white shadow-black shadow-sm'>
         <img src={eye} className='object-contain rounded-xl' alt="" />
       </div>
     </div>
