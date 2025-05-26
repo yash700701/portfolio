@@ -51,7 +51,7 @@ const skills = [
     img: mongo
   },
   {
-    skill: "Postgress SQL",
+    skill: "Postgres",
     img: postgress
   },
   {
