@@ -167,7 +167,7 @@ function Home() {
             </p>
             <div className='flex'>
             <div className='pt-5 text-white'>
-                <button className='underline pt-2 rounded-lg hover:text-[indianred] text-sky-700' ><a href="https://olive-alayne-6.tiiny.site/" target='blank'>Resume</a></button>
+                <button className='underline pt-2 rounded-lg hover:text-[indianred] text-sky-700' ><a href="https://onedrive.live.com/?cid=EE5F762A993E71BA&id=EE5F762A993E71BA%21sd8e086b721bc4a8a995b4c94963630f0&parId=EE5F762A993E71BA%21105&o=OneUp" target='blank'>Resume</a></button>
             </div>
             <div className='text-white absolute right-7 pt-1'><h1 className='text-5xl text-white'><span className='text-sky-700'>.</span>.</h1></div>
             </div>

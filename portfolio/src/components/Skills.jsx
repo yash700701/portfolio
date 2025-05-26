@@ -16,6 +16,7 @@ import react from './images/icons/React.png'
 import tailwind from './images/icons/Tailwind.png'
 import appwrite from './images/icons/Appwrite.png'
 import redux from './images/icons/Redux.png'
+import postgress from './images/icons/PostgresSQL.png'
 import express from './images/icons/express-svgrepo-com.png'
 import next from './images/icons/nextjs-icon-svgrepo-com (1).png'
 import Slider from "react-slick";
@@ -48,6 +49,10 @@ const skills = [
   {
     skill: "MongoDB",
     img: mongo
+  },
+  {
+    skill: "Postgress SQL",
+    img: postgress
   },
   {
     skill: "Express",
